@@ -1,0 +1,129 @@
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d1117;
+    color: #e6edf3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1f2937, #111827);
+    color: #fff;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #3b82f6;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #9ca3af;
+}
+
+/* Bento Layout */
+.bento {
+    padding: 60px 20px;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Glassmorphism Effect */
+.bento-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bento-card h2,
+.bento-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.bento-card p {
+    font-size: 1rem;
+    color: #9ca3af;
+}
+
+/* Hover Effects */
+.bento-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+}
+
+/* Custom Colors */
+.link-card.github {
+    background: linear-gradient(135deg, #1f2937, #111827);
+}
+
+.link-card.linkedin {
+    background: linear-gradient(135deg, #0077b5, #004d8c);
+}
+
+.link-card.youtube {
+    background: linear-gradient(135deg, #ff0000, #b20000);
+}
+
+/* Hover Animation */
+.link-card:hover {
+    filter: brightness(1.2);
+}
+
+/* Contact Card */
+.contact {
+    background: linear-gradient(135deg, #1f2937, #111827);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .bento-card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}
